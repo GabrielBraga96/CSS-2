@@ -1,0 +1,42 @@
+/* 
+    Pseudo elementos 
+    input = barra de pesquisa
+    placeholder = frase invisivel
+    :: = ativar o pseudo elemento
+    content = conteúdo
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border: 1px solid red;
+    color: blue 
+}
+
+input::placeholder {
+    color: #FF1396
+}
+
+p {
+    color: blue
+}
+
+p::first-letter {
+    color: red
+}
+
+a {
+    color: salmon
+}
+
+a::before {
+    content: "➔";
+}
+
+a::after {
+    content: "⭠";
+}

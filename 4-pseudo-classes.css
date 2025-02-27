@@ -1,0 +1,35 @@
+/* :first-child = primeiro filho / ex: primeira li de uma ul / primeiro span de uma div
+    :first-of-type = primeiro elemento de seu tipo entre os filhos de seu pai
+    :last-child = ultimo filho / ex: ultima li de uma ul / ultimo span de uma div
+    :last-of-type = ultimo elemento
+    :not() = estiliza os elementos, exceto o elemento :not()
+    :nth-child() = seleciona especificamente qual estilizar ex: (1) (2) (3) (4) (5) nas li de ul / span de div
+    :nth-last-child() = seleciona de baixo pra cima qual estilizar
+    :nth-of-type() = seleciona especificamente qual estilizar ex: (1) (2) (3) (4) (5) nos elementos
+    :nth-last-of-type() = seleciona de baixo pra cima qual estilizar
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li:first-child {
+    color: red;
+}
+
+span:first-of-type {
+    color: red;
+}
+
+p:first-of-type {
+    color: blue;
+}
+
+div :not(a) {
+    color:blueviolet;
+}
+li:nth-child(4) {
+    color: #FAFFAA;
+}

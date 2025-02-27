@@ -1,0 +1,15 @@
+/* calc = usaco para calcular quanto espaço a div vai ocupar na tela, util usar (vw view width) (vh view height) tambem acolpar % / * + - px 
+*/
+
+
+/* calculo para medade da tela*/
+div {
+    height: calc(50vh);
+    width: calc(50vw);
+}
+
+/* esse calculo está para altura quase toda e largura um pouco mais da metade */
+div {
+    height: calc(100vh - 200px);
+    width: calc(50vw + 200px);
+}

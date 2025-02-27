@@ -1,0 +1,51 @@
+/* All = para todos os dispositivos
+    Braille = para dispositivos táteis
+    Embossed = para dispositivos que imprimen em braille
+    Handheld = para dispositivos portateis geralmente com telas pequenas e banda limitada
+    Print = para impressão em papel (usado para colocar logo)
+    Projection = para apresentação em pps
+    Screen = para monitores ou dispositivos com telas coloridas e resolução adequada
+    speech = para sintetizadores de voz. As CSS 2 tem uma especificação de CSS chamada Aural, onde podemos formatar a voz dos sintetizadores
+
+    Orientação
+    portatil = altura maior que largura
+    landscape = largura maior que altura (geralmente usado para celular deitado)
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div {
+    height: 700px;
+    width: 700px;
+    background-color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    div {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* no print não aplica nada  pois não estou imprimindo */
+@media print and (max-width: 600px) {
+    div {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* usado para configurar celular deitado */
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    div {
+        background-color: red;
+        height: 200px;
+        width: 200px;
+    }
+}

@@ -1,0 +1,34 @@
+/* position: static (padrão) é statica encima e a esquerda
+    position: fixed = fixa natela sempre
+    position: sticky = age como adesivo, ao rolar a pagina chegando nele,
+    ele fixa, ao voltar a rolagem ele desfixa, (obs: necessário determinar
+    top ou left em px)
+
+    position relative: necessario inferir margin-top-button-left-right em pixels
+    referente ao seu posicionamento inicial, quando está div dentro de um pai, ou seja,
+    quandoa div é filho, se aplicar o position relative no div pai, a div dentro->
+    div filho se posiciona junto relativo  ao posicionamento em que estava dentro da
+    div pai.
+
+    position absulute: --> quando não tem pai, ou o  pai for static, se posiciona 
+    referente a pagina, então ao aplicar position absolute ela flutua e os div abaixo
+    vão para cima
+    obs: ao aplicar  em umadiv dentro de uma div, o filho se posiciona referente a pagina
+    saindo de dentro do pai.
+
+    --> se o pai não for static, se posiciona referente ao pai
+    */
+
+    * {
+        margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         height: 200vh;
+         width: 200vw;
+    }
+
+    .ded {
+        height: 350px;
+        width: 350px;
+        background-color: #FF0000;
+    }
